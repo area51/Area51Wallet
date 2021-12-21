@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>baseURL</key>
+	<string>https://ropsten.infura.io/v3</string>
+	<key>projectID</key>
+	<string>735489d9f846491faae7a31e1862d24b</string>
+	<key>argentAddress</key>
+	<string>0x70ABd7F0c9Bdc109b579180B272525880Fb7E0cB</string>
+	<key>metamaskAddress</key>
+	<string>0xA99D5a7D050e245eCce3C3ADBf535b641F615C8f</string>
+	<key>contractAddress</key>
+	<string>0xcdAd167a8A9EAd2DECEdA7c8cC908108b0Cc06D1</string>
+	<key>privateKey</key>
+	<string>0xec983791a21bea916170ee0aead71ab95c13280656e93ea4124c447bbd9a24a2</string>
+</dict>
+</plist>

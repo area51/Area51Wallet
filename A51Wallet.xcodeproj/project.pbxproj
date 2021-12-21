@@ -1,0 +1,785 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8028BA402769B72B0033366F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8028BA3F2769B72B0033366F /* AppDelegate.swift */; };
+		8028BA492769B72C0033366F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8028BA482769B72C0033366F /* Assets.xcassets */; };
+		8028BA4C2769B72C0033366F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8028BA4A2769B72C0033366F /* LaunchScreen.storyboard */; };
+		8028BA572769B72C0033366F /* AppRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8028BA562769B72C0033366F /* AppRouterTests.swift */; };
+		8028BA7C2769BB100033366F /* RoutingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8028BA762769BB100033366F /* RoutingError.swift */; };
+		8028BA7D2769BB100033366F /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8028BA772769BB100033366F /* AppRouter.swift */; };
+		8028BA7E2769BB100033366F /* RoutePresentationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8028BA782769BB100033366F /* RoutePresentationType.swift */; };
+		8028BA7F2769BB100033366F /* RouteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8028BA792769BB100033366F /* RouteType.swift */; };
+		8028BA802769BB100033366F /* RouteToBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8028BA7B2769BB100033366F /* RouteToBalance.swift */; };
+		8028BA822769C3230033366F /* RouteToBalanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8028BA812769C3230033366F /* RouteToBalanceTests.swift */; };
+		8028BA892769C6CF0033366F /* EthereumClientConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8028BA882769C6CF0033366F /* EthereumClientConfig.plist */; };
+		8035E116276A1E4500C5DEE0 /* web3.swift in Frameworks */ = {isa = PBXBuildFile; productRef = 8035E115276A1E4500C5DEE0 /* web3.swift */; };
+		8035E118276A214D00C5DEE0 /* WalletConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8035E117276A214D00C5DEE0 /* WalletConfig.swift */; };
+		80611084276A22DC0042518D /* A51Presentation in Frameworks */ = {isa = PBXBuildFile; productRef = 80611083276A22DC0042518D /* A51Presentation */; };
+		80611086276A22E00042518D /* A51Services in Frameworks */ = {isa = PBXBuildFile; productRef = 80611085276A22E00042518D /* A51Services */; };
+		8061108E276A37C10042518D /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8061108D276A37C10042518D /* DIContainer.swift */; };
+		80611090276A7A780042518D /* BalanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8061108F276A7A780042518D /* BalanceViewModel.swift */; };
+		80611093276A8AE40042518D /* EthereumClient+EthereumClientService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80611092276A8AE40042518D /* EthereumClient+EthereumClientService.swift */; };
+		80611099276ABAFA0042518D /* BigUInt+EthereumConversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80611098276ABAFA0042518D /* BigUInt+EthereumConversions.swift */; };
+		8061109B276ABC100042518D /* BalanceViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8061109A276ABC100042518D /* BalanceViewModelTests.swift */; };
+		8061109D276ACCCA0042518D /* RouteToETHTransfer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8061109C276ACCCA0042518D /* RouteToETHTransfer.swift */; };
+		8061109F276AD01A0042518D /* RouteToMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8061109E276AD01A0042518D /* RouteToMain.swift */; };
+		806110A1276AE1DD0042518D /* ETHTransferViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806110A0276AE1DD0042518D /* ETHTransferViewModel.swift */; };
+		806110A3276AF8C00042518D /* RouteToViewERC20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806110A2276AF8C00042518D /* RouteToViewERC20.swift */; };
+		806110A5276AFA520042518D /* ViewERC20ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806110A4276AFA520042518D /* ViewERC20ViewModel.swift */; };
+		806110A7276AFBA50042518D /* RouteToERC20TransfersList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806110A6276AFBA50042518D /* RouteToERC20TransfersList.swift */; };
+		806110AB276C0C0D0042518D /* ETHTransferViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806110AA276C0C0D0042518D /* ETHTransferViewModelTests.swift */; };
+		806110AD276C0F0B0042518D /* ViewERC20ViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806110AC276C0F0B0042518D /* ViewERC20ViewModelTests.swift */; };
+		806110B0276C0FE20042518D /* DIContainerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806110AF276C0FE20042518D /* DIContainerMock.swift */; };
+		806110B2276C102C0042518D /* EthereumClientStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806110B1276C102C0042518D /* EthereumClientStub.swift */; };
+		806110B5276C10CD0042518D /* NotAnimatedNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806110B4276C10CD0042518D /* NotAnimatedNavigationController.swift */; };
+		806110B7276C14D70042518D /* AppRouterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806110B6276C14D70042518D /* AppRouterSpy.swift */; };
+		806110BB276C15F20042518D /* BigUInt+EthereumConversionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806110BA276C15F20042518D /* BigUInt+EthereumConversionsTests.swift */; };
+		806110BD276C1C860042518D /* RouteToMainTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806110BC276C1C860042518D /* RouteToMainTests.swift */; };
+		806110BF276C20DA0042518D /* RouteToETHTransferTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806110BE276C20DA0042518D /* RouteToETHTransferTests.swift */; };
+		806110C3276C281A0042518D /* RouteToERC20TransfersListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806110C2276C281A0042518D /* RouteToERC20TransfersListTests.swift */; };
+		806110C5276C3B860042518D /* ERC20TransferListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806110C4276C3B860042518D /* ERC20TransferListViewModel.swift */; };
+		80E105C72770A6EA00E3A227 /* PlistLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E105C62770A6EA00E3A227 /* PlistLoader.swift */; };
+		80E105CA2771591C00E3A227 /* TransferInfoAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E105C92771591B00E3A227 /* TransferInfoAdapter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8028BA532769B72C0033366F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8028BA342769B72B0033366F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8028BA3B2769B72B0033366F;
+			remoteInfo = A51Wallet;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8028BA3C2769B72B0033366F /* A51Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A51Wallet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8028BA3F2769B72B0033366F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8028BA482769B72C0033366F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8028BA4B2769B72C0033366F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8028BA522769B72C0033366F /* A51WalletTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = A51WalletTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8028BA562769B72C0033366F /* AppRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterTests.swift; sourceTree = "<group>"; };
+		8028BA712769B7CD0033366F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		8028BA722769B8EF0033366F /* A51Services */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = A51Services; path = A51Wallet/Modules/A51Services; sourceTree = SOURCE_ROOT; };
+		8028BA762769BB100033366F /* RoutingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutingError.swift; sourceTree = "<group>"; };
+		8028BA772769BB100033366F /* AppRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		8028BA782769BB100033366F /* RoutePresentationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutePresentationType.swift; sourceTree = "<group>"; };
+		8028BA792769BB100033366F /* RouteType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteType.swift; sourceTree = "<group>"; };
+		8028BA7B2769BB100033366F /* RouteToBalance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteToBalance.swift; sourceTree = "<group>"; };
+		8028BA812769C3230033366F /* RouteToBalanceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteToBalanceTests.swift; sourceTree = "<group>"; };
+		8028BA882769C6CF0033366F /* EthereumClientConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = EthereumClientConfig.plist; sourceTree = "<group>"; };
+		8035E117276A214D00C5DEE0 /* WalletConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletConfig.swift; sourceTree = "<group>"; };
+		8061108D276A37C10042518D /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		8061108F276A7A780042518D /* BalanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewModel.swift; sourceTree = "<group>"; };
+		80611092276A8AE40042518D /* EthereumClient+EthereumClientService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EthereumClient+EthereumClientService.swift"; sourceTree = "<group>"; };
+		80611096276A91BD0042518D /* A51Presentation */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = A51Presentation; sourceTree = "<group>"; };
+		80611098276ABAFA0042518D /* BigUInt+EthereumConversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BigUInt+EthereumConversions.swift"; sourceTree = "<group>"; };
+		8061109A276ABC100042518D /* BalanceViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceViewModelTests.swift; sourceTree = "<group>"; };
+		8061109C276ACCCA0042518D /* RouteToETHTransfer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteToETHTransfer.swift; sourceTree = "<group>"; };
+		8061109E276AD01A0042518D /* RouteToMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteToMain.swift; sourceTree = "<group>"; };
+		806110A0276AE1DD0042518D /* ETHTransferViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETHTransferViewModel.swift; sourceTree = "<group>"; };
+		806110A2276AF8C00042518D /* RouteToViewERC20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteToViewERC20.swift; sourceTree = "<group>"; };
+		806110A4276AFA520042518D /* ViewERC20ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewERC20ViewModel.swift; sourceTree = "<group>"; };
+		806110A6276AFBA50042518D /* RouteToERC20TransfersList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteToERC20TransfersList.swift; sourceTree = "<group>"; };
+		806110AA276C0C0D0042518D /* ETHTransferViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ETHTransferViewModelTests.swift; sourceTree = "<group>"; };
+		806110AC276C0F0B0042518D /* ViewERC20ViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewERC20ViewModelTests.swift; sourceTree = "<group>"; };
+		806110AF276C0FE20042518D /* DIContainerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainerMock.swift; sourceTree = "<group>"; };
+		806110B1276C102C0042518D /* EthereumClientStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthereumClientStub.swift; sourceTree = "<group>"; };
+		806110B4276C10CD0042518D /* NotAnimatedNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotAnimatedNavigationController.swift; sourceTree = "<group>"; };
+		806110B6276C14D70042518D /* AppRouterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterSpy.swift; sourceTree = "<group>"; };
+		806110BA276C15F20042518D /* BigUInt+EthereumConversionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BigUInt+EthereumConversionsTests.swift"; sourceTree = "<group>"; };
+		806110BC276C1C860042518D /* RouteToMainTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteToMainTests.swift; sourceTree = "<group>"; };
+		806110BE276C20DA0042518D /* RouteToETHTransferTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteToETHTransferTests.swift; sourceTree = "<group>"; };
+		806110C2276C281A0042518D /* RouteToERC20TransfersListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteToERC20TransfersListTests.swift; sourceTree = "<group>"; };
+		806110C4276C3B860042518D /* ERC20TransferListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERC20TransferListViewModel.swift; sourceTree = "<group>"; };
+		80E105C62770A6EA00E3A227 /* PlistLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistLoader.swift; sourceTree = "<group>"; };
+		80E105C92771591B00E3A227 /* TransferInfoAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferInfoAdapter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8028BA392769B72B0033366F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80611084276A22DC0042518D /* A51Presentation in Frameworks */,
+				8035E116276A1E4500C5DEE0 /* web3.swift in Frameworks */,
+				80611086276A22E00042518D /* A51Services in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8028BA4F2769B72C0033366F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8028BA332769B72B0033366F = {
+			isa = PBXGroup;
+			children = (
+				8028BA712769B7CD0033366F /* README.md */,
+				8028BA3E2769B72B0033366F /* A51Wallet */,
+				8028BA552769B72C0033366F /* A51WalletTests */,
+				8028BA3D2769B72B0033366F /* Products */,
+				80611080276A22C50042518D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8028BA3D2769B72B0033366F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8028BA3C2769B72B0033366F /* A51Wallet.app */,
+				8028BA522769B72C0033366F /* A51WalletTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8028BA3E2769B72B0033366F /* A51Wallet */ = {
+			isa = PBXGroup;
+			children = (
+				8028BA3F2769B72B0033366F /* AppDelegate.swift */,
+				8061108D276A37C10042518D /* DIContainer.swift */,
+				80E105C82771590F00E3A227 /* Adapters */,
+				80611097276A91E10042518D /* Config */,
+				80611091276A8AC20042518D /* Extensions */,
+				80611095276A914D0042518D /* Modules */,
+				8028BA752769BB100033366F /* Routing */,
+				80611094276A91080042518D /* ViewModels */,
+				8028BA6F2769B7500033366F /* zSupportingFiles */,
+			);
+			path = A51Wallet;
+			sourceTree = "<group>";
+		};
+		8028BA552769B72C0033366F /* A51WalletTests */ = {
+			isa = PBXGroup;
+			children = (
+				806110B9276C15E30042518D /* Extensions */,
+				806110A9276C0BEA0042518D /* Routing */,
+				806110A8276C0BD90042518D /* ViewModels */,
+				806110B3276C10AF0042518D /* zUtils */,
+			);
+			path = A51WalletTests;
+			sourceTree = "<group>";
+		};
+		8028BA6F2769B7500033366F /* zSupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8028BA482769B72C0033366F /* Assets.xcassets */,
+				8028BA4A2769B72C0033366F /* LaunchScreen.storyboard */,
+				8028BA882769C6CF0033366F /* EthereumClientConfig.plist */,
+			);
+			path = zSupportingFiles;
+			sourceTree = "<group>";
+		};
+		8028BA752769BB100033366F /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				8028BA7A2769BB100033366F /* Routes */,
+				806110B8276C15440042518D /* Types */,
+				8028BA772769BB100033366F /* AppRouter.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		8028BA7A2769BB100033366F /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				8028BA7B2769BB100033366F /* RouteToBalance.swift */,
+				8061109C276ACCCA0042518D /* RouteToETHTransfer.swift */,
+				8061109E276AD01A0042518D /* RouteToMain.swift */,
+				806110A2276AF8C00042518D /* RouteToViewERC20.swift */,
+				806110A6276AFBA50042518D /* RouteToERC20TransfersList.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		80611080276A22C50042518D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		80611091276A8AC20042518D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				80611098276ABAFA0042518D /* BigUInt+EthereumConversions.swift */,
+				80611092276A8AE40042518D /* EthereumClient+EthereumClientService.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		80611094276A91080042518D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8061108F276A7A780042518D /* BalanceViewModel.swift */,
+				806110C4276C3B860042518D /* ERC20TransferListViewModel.swift */,
+				806110A0276AE1DD0042518D /* ETHTransferViewModel.swift */,
+				806110A4276AFA520042518D /* ViewERC20ViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		80611095276A914D0042518D /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				80611096276A91BD0042518D /* A51Presentation */,
+				8028BA722769B8EF0033366F /* A51Services */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		80611097276A91E10042518D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				8035E117276A214D00C5DEE0 /* WalletConfig.swift */,
+				80E105C62770A6EA00E3A227 /* PlistLoader.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		806110A8276C0BD90042518D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8061109A276ABC100042518D /* BalanceViewModelTests.swift */,
+				806110AA276C0C0D0042518D /* ETHTransferViewModelTests.swift */,
+				806110AC276C0F0B0042518D /* ViewERC20ViewModelTests.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		806110A9276C0BEA0042518D /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				806110C1276C27E90042518D /* Routes */,
+				8028BA562769B72C0033366F /* AppRouterTests.swift */,
+			);
+			path = Routing;
+			sourceTree = "<group>";
+		};
+		806110AE276C0FD50042518D /* TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				806110B6276C14D70042518D /* AppRouterSpy.swift */,
+				806110AF276C0FE20042518D /* DIContainerMock.swift */,
+				806110B1276C102C0042518D /* EthereumClientStub.swift */,
+			);
+			path = TestDoubles;
+			sourceTree = "<group>";
+		};
+		806110B3276C10AF0042518D /* zUtils */ = {
+			isa = PBXGroup;
+			children = (
+				806110AE276C0FD50042518D /* TestDoubles */,
+				806110B4276C10CD0042518D /* NotAnimatedNavigationController.swift */,
+			);
+			path = zUtils;
+			sourceTree = "<group>";
+		};
+		806110B8276C15440042518D /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				8028BA782769BB100033366F /* RoutePresentationType.swift */,
+				8028BA792769BB100033366F /* RouteType.swift */,
+				8028BA762769BB100033366F /* RoutingError.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		806110B9276C15E30042518D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				806110BA276C15F20042518D /* BigUInt+EthereumConversionsTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		806110C1276C27E90042518D /* Routes */ = {
+			isa = PBXGroup;
+			children = (
+				8028BA812769C3230033366F /* RouteToBalanceTests.swift */,
+				806110C2276C281A0042518D /* RouteToERC20TransfersListTests.swift */,
+				806110BE276C20DA0042518D /* RouteToETHTransferTests.swift */,
+				806110BC276C1C860042518D /* RouteToMainTests.swift */,
+			);
+			path = Routes;
+			sourceTree = "<group>";
+		};
+		80E105C82771590F00E3A227 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				80E105C92771591B00E3A227 /* TransferInfoAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8028BA3B2769B72B0033366F /* A51Wallet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8028BA662769B72C0033366F /* Build configuration list for PBXNativeTarget "A51Wallet" */;
+			buildPhases = (
+				8028BA382769B72B0033366F /* Sources */,
+				8028BA392769B72B0033366F /* Frameworks */,
+				8028BA3A2769B72B0033366F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = A51Wallet;
+			packageProductDependencies = (
+				8035E115276A1E4500C5DEE0 /* web3.swift */,
+				80611083276A22DC0042518D /* A51Presentation */,
+				80611085276A22E00042518D /* A51Services */,
+			);
+			productName = A51Wallet;
+			productReference = 8028BA3C2769B72B0033366F /* A51Wallet.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8028BA512769B72C0033366F /* A51WalletTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8028BA692769B72C0033366F /* Build configuration list for PBXNativeTarget "A51WalletTests" */;
+			buildPhases = (
+				8028BA4E2769B72C0033366F /* Sources */,
+				8028BA4F2769B72C0033366F /* Frameworks */,
+				8028BA502769B72C0033366F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8061108A276A23860042518D /* PBXTargetDependency */,
+				8061108C276A23860042518D /* PBXTargetDependency */,
+				8028BA542769B72C0033366F /* PBXTargetDependency */,
+			);
+			name = A51WalletTests;
+			productName = A51WalletTests;
+			productReference = 8028BA522769B72C0033366F /* A51WalletTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8028BA342769B72B0033366F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					8028BA3B2769B72B0033366F = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					8028BA512769B72C0033366F = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 8028BA3B2769B72B0033366F;
+					};
+				};
+			};
+			buildConfigurationList = 8028BA372769B72B0033366F /* Build configuration list for PBXProject "A51Wallet" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8028BA332769B72B0033366F;
+			packageReferences = (
+				8035E114276A1E4500C5DEE0 /* XCRemoteSwiftPackageReference "web3" */,
+			);
+			productRefGroup = 8028BA3D2769B72B0033366F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8028BA3B2769B72B0033366F /* A51Wallet */,
+				8028BA512769B72C0033366F /* A51WalletTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8028BA3A2769B72B0033366F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8028BA4C2769B72C0033366F /* LaunchScreen.storyboard in Resources */,
+				8028BA892769C6CF0033366F /* EthereumClientConfig.plist in Resources */,
+				8028BA492769B72C0033366F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8028BA502769B72C0033366F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8028BA382769B72B0033366F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				806110A7276AFBA50042518D /* RouteToERC20TransfersList.swift in Sources */,
+				8061109F276AD01A0042518D /* RouteToMain.swift in Sources */,
+				806110A3276AF8C00042518D /* RouteToViewERC20.swift in Sources */,
+				8028BA7C2769BB100033366F /* RoutingError.swift in Sources */,
+				8028BA7F2769BB100033366F /* RouteType.swift in Sources */,
+				8035E118276A214D00C5DEE0 /* WalletConfig.swift in Sources */,
+				80611093276A8AE40042518D /* EthereumClient+EthereumClientService.swift in Sources */,
+				806110A5276AFA520042518D /* ViewERC20ViewModel.swift in Sources */,
+				80611099276ABAFA0042518D /* BigUInt+EthereumConversions.swift in Sources */,
+				8028BA802769BB100033366F /* RouteToBalance.swift in Sources */,
+				806110A1276AE1DD0042518D /* ETHTransferViewModel.swift in Sources */,
+				8061108E276A37C10042518D /* DIContainer.swift in Sources */,
+				8061109D276ACCCA0042518D /* RouteToETHTransfer.swift in Sources */,
+				8028BA7D2769BB100033366F /* AppRouter.swift in Sources */,
+				8028BA402769B72B0033366F /* AppDelegate.swift in Sources */,
+				80611090276A7A780042518D /* BalanceViewModel.swift in Sources */,
+				806110C5276C3B860042518D /* ERC20TransferListViewModel.swift in Sources */,
+				80E105C72770A6EA00E3A227 /* PlistLoader.swift in Sources */,
+				80E105CA2771591C00E3A227 /* TransferInfoAdapter.swift in Sources */,
+				8028BA7E2769BB100033366F /* RoutePresentationType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8028BA4E2769B72C0033366F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				806110B5276C10CD0042518D /* NotAnimatedNavigationController.swift in Sources */,
+				8028BA572769B72C0033366F /* AppRouterTests.swift in Sources */,
+				806110AD276C0F0B0042518D /* ViewERC20ViewModelTests.swift in Sources */,
+				8061109B276ABC100042518D /* BalanceViewModelTests.swift in Sources */,
+				806110B2276C102C0042518D /* EthereumClientStub.swift in Sources */,
+				8028BA822769C3230033366F /* RouteToBalanceTests.swift in Sources */,
+				806110B0276C0FE20042518D /* DIContainerMock.swift in Sources */,
+				806110BF276C20DA0042518D /* RouteToETHTransferTests.swift in Sources */,
+				806110BB276C15F20042518D /* BigUInt+EthereumConversionsTests.swift in Sources */,
+				806110AB276C0C0D0042518D /* ETHTransferViewModelTests.swift in Sources */,
+				806110BD276C1C860042518D /* RouteToMainTests.swift in Sources */,
+				806110B7276C14D70042518D /* AppRouterSpy.swift in Sources */,
+				806110C3276C281A0042518D /* RouteToERC20TransfersListTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8028BA542769B72C0033366F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8028BA3B2769B72B0033366F /* A51Wallet */;
+			targetProxy = 8028BA532769B72C0033366F /* PBXContainerItemProxy */;
+		};
+		8061108A276A23860042518D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 80611089276A23860042518D /* A51Presentation */;
+		};
+		8061108C276A23860042518D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 8061108B276A23860042518D /* A51Services */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8028BA4A2769B72C0033366F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8028BA4B2769B72C0033366F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8028BA642769B72C0033366F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8028BA652769B72C0033366F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8028BA672769B72C0033366F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJKBR6T662;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.alex.A51Wallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8028BA682769B72C0033366F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJKBR6T662;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.alex.A51Wallet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8028BA6A2769B72C0033366F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJKBR6T662;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.alex.A51WalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/A51Wallet.app/A51Wallet";
+			};
+			name = Debug;
+		};
+		8028BA6B2769B72C0033366F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FJKBR6T662;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.alex.A51WalletTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/A51Wallet.app/A51Wallet";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8028BA372769B72B0033366F /* Build configuration list for PBXProject "A51Wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8028BA642769B72C0033366F /* Debug */,
+				8028BA652769B72C0033366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8028BA662769B72C0033366F /* Build configuration list for PBXNativeTarget "A51Wallet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8028BA672769B72C0033366F /* Debug */,
+				8028BA682769B72C0033366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8028BA692769B72C0033366F /* Build configuration list for PBXNativeTarget "A51WalletTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8028BA6A2769B72C0033366F /* Debug */,
+				8028BA6B2769B72C0033366F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8035E114276A1E4500C5DEE0 /* XCRemoteSwiftPackageReference "web3" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/argentlabs/web3.swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8035E115276A1E4500C5DEE0 /* web3.swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8035E114276A1E4500C5DEE0 /* XCRemoteSwiftPackageReference "web3" */;
+			productName = web3.swift;
+		};
+		80611083276A22DC0042518D /* A51Presentation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = A51Presentation;
+		};
+		80611085276A22E00042518D /* A51Services */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = A51Services;
+		};
+		80611089276A23860042518D /* A51Presentation */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = A51Presentation;
+		};
+		8061108B276A23860042518D /* A51Services */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = A51Services;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 8028BA342769B72B0033366F /* Project object */;
+}
